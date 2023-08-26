@@ -1,0 +1,41 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tooltip-content {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.tooltip.top .tooltip-content {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip.bottom .tooltip-content {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip.right .tooltip-content {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+.tooltip.left .tooltip-content {
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+}
